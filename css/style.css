@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url(../images/background.png) no-repeat center/cover;
+}
+.turbine {
+  width: 10px;
+  height: 400px;
+  background: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+}
+.circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 150%;
+  background-color: rgb(26, 168, 28);
+  position: absolute;
+  top: 238px;
+  left: 49%;
+  animation: turbine linear 3s infinite;
+}
+.blade {
+  width: 20px;
+  height: 200px;
+  background-color: yellow;
+  border-top-left-radius: 120px;
+  transform: rotate(92deg);
+  position: absolute;
+  top: -71px;
+  left: 140px;
+}
+.one {
+  position: absolute;
+  top: -200px;
+  left: 15px;
+  transform: rotate(360deg);
+  border-top-right-radius: 120px;
+}
+.two {
+  position: absolute;
+  top: -71px;
+  left: -110px;
+  transform: rotate(267deg);
+}
+.three {
+  position: absolute;
+  top: 50px;
+  left: 16px;
+  transform: rotate(180deg);
+  border-top-right-radius: 120px;
+}
+@keyframes turbine {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
